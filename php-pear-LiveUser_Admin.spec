@@ -17,8 +17,8 @@ URL:		http://pear.php.net/package/LiveUser_Admin/
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-common >= 3:4.2.0
 Requires:	php-pear
-Requires:	php-pear-PEAR >= 1:1.3.1
 Requires:	php-pear-LiveUser >= 0.16.0
+Requires:	php-pear-PEAR-core >= 1:1.3.1
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
