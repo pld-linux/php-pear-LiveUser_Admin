@@ -7,12 +7,12 @@
 Summary:	%{_pearname} - user authentication and permission management framework
 Summary(pl):	%{_pearname} - uwierzytelnianie u¿ytkowników i zarz±dzanie uprawnieniami
 Name:		php-pear-%{_pearname}
-Version:	0.3.7
+Version:	0.3.8
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	c0d30eb1d7bc3c97aa02f4d67fcea1d2
+# Source0-md5:	0c5679d116e109a2f8264dc793fc2c6b
 URL:		http://pear.php.net/package/LiveUser_Admin/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
