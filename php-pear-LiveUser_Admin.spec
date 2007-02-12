@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - user authentication and permission management framework
-Summary(pl):	%{_pearname} - uwierzytelnianie u¿ytkowników i zarz±dzanie uprawnieniami
+Summary(pl.UTF-8):   %{_pearname} - uwierzytelnianie uÅ¼ytkownikÃ³w i zarzÄ…dzanie uprawnieniami
 Name:		php-pear-%{_pearname}
 Version:	0.3.9
 Release:	1
@@ -31,10 +31,10 @@ LiveUser.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-LiveUser_Admin przeznaczony jest do u¿ywania wraz z klas± LiveUser.
-Sk³ada siê ze wszystkich klas potrzebnych do administracji danymi
-u¿ywanymi przez klasê LiveUser.
+%description -l pl.UTF-8
+LiveUser_Admin przeznaczony jest do uÅ¼ywania wraz z klasÄ… LiveUser.
+SkÅ‚ada siÄ™ ze wszystkich klas potrzebnych do administracji danymi
+uÅ¼ywanymi przez klasÄ™ LiveUser.
 
 Ta klasa ma w PEAR status: %{_status}.
 
