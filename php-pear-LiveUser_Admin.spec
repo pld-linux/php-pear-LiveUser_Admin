@@ -3,12 +3,11 @@
 %define		_subclass	Admin
 %define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
-
 Summary:	%{_pearname} - user authentication and permission management framework
 Summary(pl.UTF-8):	%{_pearname} - uwierzytelnianie użytkowników i zarządzanie uprawnieniami
 Name:		php-pear-%{_pearname}
 Version:	0.3.9
-Release:	2
+Release:	3
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -19,10 +18,19 @@ BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
 Requires:	php-common >= 3:4.2.0
 Requires:	php-pear
-Requires:	php-pear-LiveUser >= 0.16.0
+Requires:	php-pear-LiveUser >= 0.16.12
 Requires:	php-pear-PEAR-core >= 1:1.3.1
+Suggests:	php-pear-Crypt_RC4
+Suggests:	php-pear-DB >= 1.6.0
+Suggests:	php-pear-Log >= 1.7.0
+Suggests:	php-pear-MDB >= 1:1.1.4
+Suggests:	php-pear-MDB2 >= 1:2.1.0
+Suggests:	php-pear-XML_Tree
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+
+# exclude optional dependencies
+%define		_noautoreq	pear(Crypt/RC4.*) pear(DB.*) pear(Log.*) pear(MDB.*) pear(MDB2.*) pear(XML/Tree.*)
 
 %description
 LiveUser_Admin is meant to be used with the LiveUser package. It is
